@@ -19,11 +19,11 @@ deploy:
 properties:
     KEYCLOAK_USER: admin
     DB_VENDOR: POSTGRES
-    DB_ADDR: postgres
+    DB_ADDR: postgres-keycloak-master-13-x
     DB_DATABASE: keycloak
     DB_USER: keycloak
     KEYCLOAK_PASSWORD: 
       VAULT:KEYCLOAK_PASSWORD
     DB_PASSWORD:
-      VAULT:KEYCLOAKDB_PASSWORD
+      VAULT:POSTGRESQL_KEYCLOAK_PASSWORD
     revision : 23
